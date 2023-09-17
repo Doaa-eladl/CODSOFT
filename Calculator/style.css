@@ -50,7 +50,7 @@ main>section:nth-child(1){
     cursor: pointer;
 }
 .zero{
-    grid-area: 5/4/5/1;
+    grid-area: 5/3/5/1;
 }
 .btncontainer>div:last-child{
     grid-area: 6/5/4/4;
