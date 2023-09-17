@@ -19,6 +19,8 @@ function deletechar(){
 }
 
 function calc(){
+    //by custom fun
+
     //intialize variable
     let num1,num2,operator
     //loop all char till fount operation char
@@ -56,6 +58,15 @@ function calc(){
         //retern to initial mode
         text = "0"
     }
+    //update 
+    update()
+}
+
+//another way
+function calc2(){
+    //or using eval directly
+    text = eval(text)
+    
     //update 
     update()
 }
