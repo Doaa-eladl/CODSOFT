@@ -66,7 +66,12 @@ function calc(){
 function calc2(){
     //or using eval directly
     text = eval(text)
-    
+       //check logic and throw error
+    if(text=="Infinity"){
+        alert("Check you insert correct operation");
+        //retern to initial mode
+        text = "0"
+    }
     //update 
     update()
 }
