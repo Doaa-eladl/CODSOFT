@@ -96,5 +96,5 @@ deletecharbtn.addEventListener('click' , ()=>{
 })
 
 resultbtn.addEventListener('click' , ()=>{
-    calc()
+    calc2()
 })
