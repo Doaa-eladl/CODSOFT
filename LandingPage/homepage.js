@@ -1,29 +1,46 @@
+var navlist_item1 = document.querySelector(".navlist_item1");
+var navlist_item2 = document.querySelector(".navlist_item2");
+var navlist_item3 = document.querySelector(".navlist_item3");
+var navlist_item4 = document.querySelector(".navlist_item4");
+var navlist_item6 = document.querySelector(".navlist_item6");
+
 window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
-    if(window.innerWidth>300){
-        header.classList.toggle("scrollingheader", window.scrollY >300);
-        var navlist_item1 = document.querySelector(".navlist_item1");
-        navlist_item1.classList.add("heighlit",window.scrollY>-1);
+    console.log(this.window.scrollY)
+    if(window.scrollY>3580 && window.scrollY<6000){
+        navlist_item4.classList.remove("heighlit");
+        navlist_item6.classList.add("heighlit");
     }
-    if(window.innerWidth>0){
-        var navlist_item1 = document.querySelector(".navlist_item1");
-        navlist_item1.classList.toggle("heighlit",window.scrollY>0&&window.scrollY<1000);
+    if(window.scrollY>2880 && window.scrollY<3580){
+        navlist_item2.classList.remove("heighlit");
+        navlist_item3.classList.remove("heighlit");
+        navlist_item6.classList.remove("heighlit");
+        navlist_item4.classList.add("heighlit");
     }
-    if(window.innerWidth>300){
-        var navlist_item2 = document.querySelector(".navlist_item2");
-        navlist_item2.classList.toggle("heighlit",window.scrollY>1000&&window.scrollY<2000);
+    if(window.scrollY>2000 && window.scrollY<2800){
+        navlist_item2.classList.remove("heighlit");
+        navlist_item4.classList.remove("heighlit");
+        navlist_item6.classList.remove("heighlit");
+        navlist_item3.classList.add("heighlit");
     }
-    if(window.innerWidth>300){
-        var navlist_item3 = document.querySelector(".navlist_item3");
-        navlist_item3.classList.toggle("heighlit",window.scrollY>2000&&window.scrollY<2800);
+    if(window.scrollY>600 && window.scrollY<2000){
+        console.log('now')
+        navlist_item1.classList.remove("heighlit");
+        navlist_item3.classList.remove("heighlit");
+        navlist_item4.classList.remove("heighlit");
+        navlist_item6.classList.remove("heighlit");
+        navlist_item2.classList.add("heighlit");
     }
-    if(window.innerWidth>300){
-        var navlist_item4 = document.querySelector(".navlist_item4");
-        navlist_item4.classList.toggle("heighlit",window.scrollY>2800&&window.scrollY<3600);
+    if(window.scrollY >100 && window.scrollY<600){
+        header.classList.add("scrollingheader");
     }
-    if(window.innerWidth>300){
-        var navlist_item6 = document.querySelector(".navlist_item6");
-        navlist_item6.classList.toggle("heighlit",window.scrollY>3600&&window.scrollY<4200);
+    if(window.scrollY <100){
+        header.classList.remove("scrollingheader");
+        navlist_item1.classList.add("heighlit");
+        navlist_item2.classList.remove("heighlit");
+        navlist_item3.classList.remove("heighlit");
+        navlist_item4.classList.remove("heighlit");
+        navlist_item6.classList.remove("heighlit");
     }
 })
 var question1=document.querySelector('.question1')
