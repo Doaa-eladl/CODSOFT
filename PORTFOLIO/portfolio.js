@@ -45,7 +45,7 @@ window.addEventListener('scroll',()=>{
         navelements[5].classList=""
     }
     //skills
-    if(window.scrollY>2000 && window.scrollY<2900){
+    if(window.scrollY>2000 && window.scrollY<2200){
         navelements[0].classList=""
         navelements[1].classList=""
         navelements[2].classList=""
@@ -54,7 +54,7 @@ window.addEventListener('scroll',()=>{
         navelements[5].classList=""
     }
     //resume
-    if(window.scrollY>2900 && window.scrollY<3395){
+    if(window.scrollY>2200 && window.scrollY<3000){
         navelements[0].classList=""
         navelements[1].classList=""
         navelements[2].classList=""
@@ -63,7 +63,7 @@ window.addEventListener('scroll',()=>{
         navelements[5].classList=""
     }
     //contact me
-    if(window.scrollY>3395 && window.scrollY<10000){
+    if(window.scrollY>3000 && window.scrollY<10000){
         navelements[0].classList=""
         navelements[1].classList=""
         navelements[2].classList=""
