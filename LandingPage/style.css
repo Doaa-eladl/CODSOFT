@@ -2,13 +2,13 @@
 
 html{
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0px;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    scroll-behavior: smooth;
 }
 
 header{
